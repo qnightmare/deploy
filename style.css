@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 body {
   background-color: rgb(244,244,244 );
   margin: 0;
@@ -222,7 +223,7 @@ div[class^='col-'] {
   .os-pagination-pages {
     height: 40px;
     width: 40px;
-}
+}}
 
 /* m */
 @media (min-width: 768px) {
@@ -238,7 +239,7 @@ div[class^='col-'] {
   .os-pagination-pages {
     height: 40px;
     width: 40px;
-}
+}}
 
 /* l */
 @media (min-width: 992px) {
@@ -255,7 +256,7 @@ div[class^='col-'] {
   .os-pagination-pages {
     height: 40px;
     width: 40px;
-}
+}}
 
 /* xl */
 @media (min-width: 1200px) {
@@ -272,8 +273,8 @@ div[class^='col-'] {
   .os-pagination-pages {
     height: 40px;
     width: 40px;
-}
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+}}
+
 body {
   background-color: rgb(244,244,244 );
   margin: 0;
