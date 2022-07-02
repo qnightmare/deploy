@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body {
+  background-color: rgb(244,244,244 );
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  /* width: 400px; */
+  /* margin: 0 auto; */
+  /* padding: 0px 15px; */
+  /* box-sizing: border-box; */
+}
+
+
+:root {
+  --bg-main: #ffffff;
+  --main-color: #7e72f2;
+  --active-color: #5c4eda;
+  --element-bg-color: #ededed;
+  --text-main-color: #2c2c2c;
+  --text-active-color: #ffffff;
+}
+
+.os-card-grid {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  vertical-align: middle;
+  text-align: center;
+  flex-wrap: wrap; */
+  margin: 0 0;
+  /* outline: 1px solid black; */
+  background: lightblue;
+}
+
+
+.os-product-card {
+  /* max-height: 27rem; */
+  /* max-width: 100%; */
+  /* min-height: 100%; */
+  /* min-width: 400px; */
+  height: 380px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: var(--bg-main);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* display: grid;
+  grid-template-rows: 4fr 2fr 1fr;
+  overflow: hidden; */
+  /* margin: 15px; */
+  padding: 15px;
+  cursor: default;
+}
+
+.os-product-img {
+  background-size: contain;
+  box-sizing: border-box;
+  margin: 0.75rem 0.75rem 0 0.75rem;
+  padding: 0 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1.2;
+  overflow: hidden;
+}
+.img {
+  max-height: 100%;
+  max-width: 100%;
+}
+.os-product-discription {
+  color: var(--text-main-color);
+  box-sizing: border-box;
+  margin: 0.75rem;
+  padding: 0.75rem 0.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  flex: 0.8;
+}
+
+.os-rating-price-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.os-rating {
+  width: 70px;
+  height: 27px;
+  font-size: 0.813rem;
+  color: var(--text-active-color);
+  background-color: var(--main-color);
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.os-price {
+  font-size: 0.937rem;
+}
+
+.os-product-name {
+  font-size: 0.813rem;
+  margin-top: 5px;
+}
+
+.os-product-category {
+  font-size: 0.625rem;
+}
+
+.os-add-button {
+  background-color: var(--main-color);
+  width: 100%;
+  height: 2.5rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--text-active-color);
+  box-sizing: border-box;
+  cursor: pointer;
+  border-radius: 0  0 7px 7px;
+}
+.os-add-button:hover{
+  background-color: var(--active-color);
+  transition: all 0.5s ease 0s;
+}
+.container {
+  width: 1400px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  /* height: 100vh; */
+}
+
+div[class^='col-'] {
+  outline: 1px solid red;
+  text-align: center;
+}
+.card-box {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.col-1 {
+  width: calc(100% / 12);
+}
+
+.col-2 {
+  width: calc(100% / 12 * 2);
+}
+
+.col-3 {
+  width: calc(100% / 12 * 3);
+}
+
+.col-4 {
+  width: calc(100% / 12 * 4);
+}
+
+.col-5 {
+  width: calc(100% / 12 * 5);
+}
+
+.col-6 {
+  width: calc(100% / 12 * 6);
+}
+
+.col-7 {
+  width: calc(100% / 12 * 7);
+}
+
+.col-8 {
+  width: calc(100% / 12 * 8);
+}
+
+.col-9 {
+  width: calc(100% / 12 * 9);
+}
+
+.col-10 {
+  width: calc(100% / 12 * 10);
+}
+
+.col-11 {
+  width: calc(100% / 12 * 11);
+}
+
+.col-12 {
+  width: calc(100% / 12 * 12);
+  box-sizing: border-box;
+}
+
+
+/* s */
+@media (min-width: 576px) {
+  .col-s-0 {
+    width: calc(100% / 12 * 0);
+  }
+
+  .col-s-12 {
+    width: calc(100% / 12 * 12);
+  }
+  .col-s-12f12 {
+    width: calc(100% / 12 * 12);
+  }
+  .os-pagination-pages {
+    height: 40px;
+    width: 40px;
+}
+
+/* m */
+@media (min-width: 768px) {
+  .col-m-4 {
+    width: calc(100% / 12 * 4);
+  }
+  .col-m-8 {
+    width: calc(100% / 12 * 8);
+  }
+  .col-m-6f12 {
+    width: calc(100% / 12 * 6);
+  }
+  .os-pagination-pages {
+    height: 40px;
+    width: 40px;
+}
+
+/* l */
+@media (min-width: 992px) {
+  .col-l-3 {
+    width: calc(100% / 12 * 3);
+  }
+
+  .col-l-9 {
+    width: calc(100% / 12 * 9);
+  }
+  .col-l-4f12 {
+    width: calc(100% / 12 * 4);
+  }
+  .os-pagination-pages {
+    height: 40px;
+    width: 40px;
+}
+
+/* xl */
+@media (min-width: 1200px) {
+  .col-xl-2 {
+    width: calc(100% / 12 * 2);
+  }
+
+  .col-xl-10 {
+    width: calc(100% / 12 * 10);
+  }
+  .col-xl-4f12 {
+    width: calc(100% / 12 * 4);
+  }
+  .os-pagination-pages {
+    height: 40px;
+    width: 40px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body {
+  background-color: rgb(244,244,244 );
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+:root {
+  --bg-main: #ffffff;
+  --main-color: #7e72f2;
+  --active-color: #5c4eda;
+  --element-bg-color: #ededed;
+  --text-main-color: #2c2c2c;
+  --text-active-color: #ffffff;
+}
+.os-pagination {
+  height: auto;
+  width: auto;
+  /* margin: 0 auto; */
+  background-color: var(--bg-main);
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 0.875rem;
+  cursor: pointer;
+  color: var(--text-main-color);
+}
+.os-pagination-pages {
+  max-height: 40px;
+  max-width: 40px;
+ padding: 0;
+  display: flex;
+  /* flex-wrap: wrap; */
+  background: var(--element-bg-color);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+.os-pagination-pages.active {
+  background-color: var(--main-color);
+  color: var(--text-active-color);
+  text-decoration: none;
+}
+.os-pagination-pages:hover {
+  background-color: var(--active-color);
+  transition: 0.5s ease 0s;
+  color: var(--text-active-color);
+}
+/* .os-pagination-pages.back {
+  margin-right: 15px;
+}
+.os-pagination-pages.forvard {
+  margin-left: 15px;
+} */
